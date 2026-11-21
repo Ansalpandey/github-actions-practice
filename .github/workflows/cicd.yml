@@ -1,0 +1,26 @@
+name: CI/CD
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the Code
+        run: echo "Cloning the Code."
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build the Code
+        run: echo "Build the Code."
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test the Code
+        run: echo "Testing the Code."
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the Code
+        run: echo "Deploying the Code."
