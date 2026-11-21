@@ -1,0 +1,12 @@
+name: Hello
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello to DevOps
+        run: echo "Hello From India to GitHub Actions"
+
